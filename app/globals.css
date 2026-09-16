@@ -1,0 +1,171 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 160 15% 98%;
+    --foreground: 160 30% 8%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 160 30% 8%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 160 30% 8%;
+
+    --primary: 160 60% 11%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 10% 93%;
+    --secondary-foreground: 160 40% 12%;
+
+    --muted: 160 10% 94%;
+    --muted-foreground: 160 15% 42%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 15% 88%;
+    --input: 160 15% 88%;
+    --ring: 160 60% 11%;
+
+    --radius: 0.75rem;
+  }
+
+  .dark {
+    --background: 160 25% 4%;
+    --foreground: 160 15% 96%;
+
+    --card: 160 20% 7%;
+    --card-foreground: 160 15% 96%;
+
+    --popover: 160 20% 7%;
+    --popover-foreground: 160 15% 96%;
+
+    --primary: 160 60% 20%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 160 15% 12%;
+    --secondary-foreground: 160 15% 96%;
+
+    --muted: 160 15% 12%;
+    --muted-foreground: 160 15% 60%;
+
+    --accent: 38 92% 50%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62% 30%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 160 18% 13%;
+    --input: 160 18% 13%;
+    --ring: 160 60% 20%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground antialiased selection:bg-emerald-500/20 selection:text-emerald-300;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+/* Creative Placement Portal Styling & Glassmorphic Utilities */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(51, 65, 85, 0.6);
+}
+
+.glass-card-emerald {
+  background: linear-gradient(135deg, rgba(6, 78, 59, 0.25) 0%, rgba(15, 23, 42, 0.85) 100%);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(16, 185, 129, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
+.card-hover-lift {
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card-hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px -6px rgba(16, 185, 129, 0.2);
+  border-color: rgba(52, 211, 153, 0.45);
+}
+
+.glow-emerald-sm {
+  box-shadow: 0 0 15px -3px rgba(16, 185, 129, 0.35);
+}
+
+.glow-emerald-lg {
+  box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.3);
+}
+
+.bg-grid-subtle {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+}
+
+.bg-dots-subtle {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+.text-gradient-emerald {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 50%, #6ee7b7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-cyan {
+  background: linear-gradient(135deg, #06b6d4 0%, #38bdf8 50%, #60a5fa 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.btn-shimmer {
+  background: linear-gradient(90deg, #10b981 0%, #059669 50%, #10b981 100%);
+  background-size: 200% 100%;
+  animation: shimmer 3s infinite;
+}
+
+/* Subtle micro border and backdrop cards */
+.enterprise-card {
+  background: rgba(11, 18, 15, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(16, 185, 129, 0.12);
+}
+
+.enterprise-card-hover {
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+.enterprise-card-hover:hover {
+  border-color: rgba(16, 185, 129, 0.28);
+  transform: translateY(-1px);
+}
+
+/* Clean custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(16, 185, 129, 0.25);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(16, 185, 129, 0.5);
+}
