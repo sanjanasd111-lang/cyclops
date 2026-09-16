@@ -1,64 +1,84 @@
+<div align="center">
+
 # Cyclops
 
-### RUAS Internal Smart India Hackathon 2026
+### Smart career intelligence for students, institutions, and industry
 
-**Dated: 16 September 2026**
+![Cyclops](https://readme-typing-svg.demolab.com?font=Inter&weight=700&size=28&pause=900&color=2563EB&center=true&vCenter=true&width=760&lines=Discover+skills.+Build+careers.;Practice+with+AI.+Interview+with+confidence.;Connect+campus+talent+with+industry.)
 
-Cyclops is a skills, internships, and placement intelligence platform created for the **Ramaiah University of Applied Sciences (RUAS) SIH Internal Hackathon 2026**. It connects students, faculty, institutions, and industry through verified skills, explainable opportunity matching, career preparation, and placement analytics.
+**Ramaiah University of Applied Sciences · SIH Internal Hackathon 2026**
 
-> **Created by:** Samrat Choudhury, Pallavi CJ, Sanjana SD, and Rohit Nagaraj Bhat
+[![Next.js](https://img.shields.io/badge/Next.js-14-black?logo=next.js)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6-3178C6?logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Supabase](https://img.shields.io/badge/Supabase-PostgreSQL-3ECF8E?logo=supabase&logoColor=white)](https://supabase.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer%20Motion-Animations-EF008F?logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
-## Feature Tour
+</div>
 
-The product uses Framer Motion and Tailwind transitions to make important workflows feel alive: animated dashboard reveals, responsive role cards, interactive charts, live application updates, guided forms, and AI interview feedback.
+## About
 
-| Workspace | What it provides |
-| --- | --- |
-| **Student** | Skill Digital Twin, AI mock interviews, resume studio, digital passport, and personalized opportunities |
-| **Industry** | Candidate discovery, explainable matching, job creation, and recruitment pipeline management |
-| **Institution** | Placement command center, progression funnel, skill heatmaps, analytics, and training batches |
-| **Faculty** | Mentorship tracking, student progress, industrial training, research, and workshops |
-| **Admin** | Verification, opportunity moderation, audit logs, analytics, and system health monitoring |
+Cyclops is a career and placement intelligence platform built for the **Ramaiah University of Applied Sciences SIH Internal Hackathon 2026**. It helps students understand their strengths, practise interviews, and present verified portfolios while giving institutions and industry teams a shared view of talent, opportunities, and placement progress.
 
-## How It Works
+## Features
 
-```mermaid
-flowchart LR
-    A[Student skills and profile] --> B[Assessment and verification]
-    B --> C[Explainable opportunity matching]
-    C --> D[Applications and recruitment pipeline]
-    D --> E[Institution and faculty insights]
-    E --> A
-```
+- **Student career command center** — Track skills, opportunities, notifications, and career progress in one place.
+- **AI mock interviews** — Practise role-specific interviews, receive structured feedback, and review interview history.
+- **Resume Studio** — Create a polished resume and get AI-assisted improvement suggestions.
+- **Digital portfolio and passport** — Present projects, skills, certifications, and a shareable profile.
+- **Industry recruitment workspace** — Discover candidates, create opportunities, compare profiles, and manage a recruitment pipeline.
+- **Institution placement intelligence** — Monitor placement funnels, skill demand, training needs, and outcomes.
+- **Admin governance** — Moderate opportunities, verify profiles, inspect system health, and review usage analytics.
+- **Responsive animated interface** — Framer Motion transitions and Tailwind CSS keep the experience clear and engaging across devices.
 
 ## Technology
 
-- Next.js 14 App Router, React 18, TypeScript
-- Tailwind CSS, Framer Motion, Lucide Icons, and Recharts
-- Supabase PostgreSQL, SSR authentication, and Row-Level Security
-- Google Gemini assistive AI with Zod validation
+- Next.js 14 App Router, React 18, and TypeScript
+- Tailwind CSS, Framer Motion, and Lucide icons
+- Supabase PostgreSQL, authentication, storage, and Row-Level Security
+- Google Gemini for assistive career and interview intelligence
+- Recharts for analytics and data visualisation
 
-## Run Locally
+## Running locally
 
 ### Prerequisites
 
-- Node.js 18 or 20
+- Node.js 18 or newer
 - npm
-- Supabase and Gemini credentials for connected features
+- A Supabase project
+- A Google Gemini API key for AI features
 
 ### Setup
 
-```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/cyclops.git
-cd cyclops
-npm install
-copy .env.example .env.local
-npm run dev
-```
+1. Clone the repository and enter the project directory:
 
-Open [http://localhost:3000](http://localhost:3000). Update `.env.local` with the required values before using database or AI-backed features.
+   ```bash
+   git clone https://github.com/samratc252007/cyclops.git
+   cd cyclops
+   ```
 
-### Quality Checks
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create your local environment file:
+
+   ```bash
+   copy .env.example .env.local
+   ```
+
+   On macOS or Linux, use `cp .env.example .env.local` instead. Add your Supabase and Gemini credentials to `.env.local`. Never commit this file.
+
+4. Start the development server:
+
+   ```bash
+   npm run dev
+   ```
+
+5. Open [http://localhost:3000](http://localhost:3000).
+
+### Quality checks
 
 ```bash
 npm run typecheck
@@ -66,18 +86,15 @@ npm run lint
 npm run build
 ```
 
-## Demo and Documentation
+## Team
 
-- [SIH 7-minute demo](SIH_7_MINUTE_DEMO.md)
-- [Demo script](SIH_DEMO_SCRIPT.md)
-- [Judge Q&A](SIH_JUDGE_QA.md)
-- [Technical architecture](TECHNICAL_ARCHITECTURE.md)
-- [Feature matrix](FINAL_FEATURE_MATRIX.md)
+Created by **Samrat Choudhury, Pallavi CJ, Sanjana SD, and Rohit Nagaraj Bhat**.
 
-## Contact
+## Project support
 
-For project-related queries, email [adminmockinterview@gmail.com](mailto:adminmockinterview@gmail.com).
+For project-related queries, email **adminmockinterview@gmail.com**.
 
-## Credits
+## Event
 
-Built for the Ramaiah University of Applied Sciences Internal Smart India Hackathon 2026 by **Samrat Choudhury, Pallavi CJ, Sanjana SD, and Rohit Nagaraj Bhat**.
+**Ramaiah University of Applied Sciences — SIH Internal Hackathon 2026**  
+**Date:** 16 September 2026
